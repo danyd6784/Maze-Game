@@ -17,7 +17,7 @@ const verticalEdge = '║'
 function createGrid(gridDimension){
     let gridArray = [];
     for (let i = 0; i < gridDimension; i++){
-        //push new array filled with Arbitrary character to every slo
+        //push new array filled with Arbitrary character to every slot
         gridArray.push(Array(gridDimension).fill("O"));
     }
     return gridArray;
