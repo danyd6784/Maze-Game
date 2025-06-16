@@ -1,9 +1,5 @@
 class Entity {
-    constructor() {
-        this.__x_coordinate = 1;
-        this.__y_coordinate = 1;
-    }
-    constructor(x, y){
+    constructor(x = 1, y = 1){
         this.__x_coordinate = x;
         this.__y_coordinate = y;
     }
