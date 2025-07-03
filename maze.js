@@ -10,14 +10,17 @@ const bottomRightCorner = '╝'
 const horizontalEdge = '═'
 const verticalEdge = '║'
 
-class Maze{
+export class Maze{
     constructor(width = 10, height = 4){
-        self.__width = width;
-        self.__height = height;
+        this.__width = width;
+        this.__height = height;
+        this.__maze = null;
     }
     
-    build(){
-        
+    generate(){
+        //Implement Prim's algorithm to generate the maze
+
+
     }
     clear(){
 

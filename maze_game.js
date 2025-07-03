@@ -9,36 +9,21 @@ of the maze.
 be in the top right hand corner of the maze and marked by an asterisk character (*).
 */
 
-const { terminal } = require('terminal-kit');
-const maze = require('/Maze.js');
-const termkit = require('terminal-kit').terminal;
+
+import { Menu } from './Menu.js';
+import { Maze } from './Maze.js';
+
 "use strict"
 
 //character set which will be used during maze generation
 const character_Icon = '𐙬'
 
+Menu.launchMainMenu();
+while (gameActive){
+
+}
+
 
 //Define the menu options of the maze game in an array
-const menuItems = [
-    "Play Game",
-    "Settings",
-    "Exit"];
 
-
-termkit.singleColumnMenu(menuItems, (error, response) => {
-    let selection = response.selectedText;
-    switch (selection) {
-        case "Play Game":
-            console.log("Now launching the game")
-            launchGame();
-            break;
-        case "Settings":
-            launchSettings()
-            console.log("Now opening settings");
-            break;
-        default:
-            break;
-    }
-    process.exit(0);
-});
 
