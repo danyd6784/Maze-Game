@@ -30,12 +30,15 @@ termkit.singleColumnMenu(menuItems, (error, response) => {
     switch (selection) {
         case "Play Game":
             console.log("Now launching the game")
+            launchGame();
             break;
         case "Settings":
+            launchSettings()
             console.log("Now opening settings");
             break;
         default:
             break;
     }
     process.exit(0);
-    });
+});
+
